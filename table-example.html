@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap</title>
+        <link href="css/style.css" type="text/css" rel="stylesheet">
+		<link href="datatables/datatables.min.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
+    </head>
+    <body>
+        <header></header>
+        <!-- Nav Div -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="documentation.html">Documentation</a>
+            <a href="table-example.html">Examples</a>
+            <a href="#">Icons</a>
+            <a href="#">Themes</a>
+            <a href="#">Expo</a>
+            
+			<a class="pull-right" id="dropdown">v4.4 <i class="fas fa-caret-down"></i>
+				<ul class="my-unstyled-list dropdown-menu">
+					<li>Latest(v4.4.x)</li>
+					<li>v4.3.1</li>
+					<li>v4.2.1</li>
+					<li>v4.0.0</li>
+					<hr/>
+					<li>v4 Alpha 6</li>
+					<li>v3.4.1</li>
+					<li>v3.3.7</li>
+					<li>v2.3.2</li>
+				</ul>
+			</a>
+        </nav>
+        <!-- End of Nav Div -->
+        <!-- Main Div -->
+        <main>
+			
+            <div>
+				<h2>Forms</h2>
+				<p class="bd-lead">Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.</p>
+				<h3>Examples</h3>				
+				<form id="signup">
+					<div class="header">
+						<h3>Sign Up</h3>
+					</div>
+					<div class="inputs">
+						<input type="email" class="myInput" placeholder="e-mail" id="your_email_id" name="your_email_id" />
+						<input type="password" class="myInput" placeholder="Password" id="your_password" name="your_password"/>
+						<div class="checkboxy">
+							<input name="check_me" id="check_me" value="1" type="checkbox" /><label class="terms">I accept the terms of use</label>
+						</div>
+						<input type="submit" id="submit" value="SIGN UP FOR INVITE NOW" />
+					</div>
+				</form>
+			</div>
+			
+            <div>
+                <h2>Tables</h2>
+                <p class="bd-lead">Documentation and examples for opt-in styling of tables (given their prevalent use in JavaScript plugins) with Bootstrap.</p>
+                
+                <h3>Examples</h3>
+                <p>Due to the widespread use of tables across third-party widgets like calendars and date pickers, we’ve designed our tables to be opt-in. Just add the base class .table to any &lt;table&gt;, then extend with custom styles or our various included modifier classes.</p>
+                <p>Using the most basic table markup, here’s how .table-based tables look in Bootstrap. All table styles are inherited in Bootstrap 4, meaning any nested tables will be styled in the same manner as the parent.</p>
+                
+                <h3>Table example using jQuery Datatable Plugin</h3>
+                <table class="table" id="example-table">
+                  <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Title</th>
+                        <th>Acceptance</th>
+                        <th>Difficulty</th>
+                    </tr>
+                  </thead>
+                </table>
+            </div>
+			
+			<div>             
+                <h3>Table example using XMLHTTPREQUEST</h3>
+                <table class="table">
+                  <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Title</th>
+                        <th>Acceptance</th>
+                        <th>Difficulty</th>
+                    </tr>
+                  </thead>
+				  	<tbody id="json-table">
+						
+				   	</tbody>
+                </table>
+            </div>
+			
+        </main>
+        <!-- End of Main Div -->
+        <!-- Footer Div -->
+        <footer>
+            <ul class="list-inline">
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Examples</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <p>Designed and built with all the love in the world by the Bootstrap team with the help of our contributors.</p>
+
+            <p>Currently v4.4.1. Code licensed MIT, docs CC BY 3.0.</p>
+        </footer>
+        <!-- End of Footer Div -->
+		<script src="js/jquery-2.2.4.min.js"></script>
+		<script src="https://kit.fontawesome.com/2b63d8a8a8.js" crossorigin="anonymous"></script>
+		<script src="datatables/datatables.min.js"></script>
+		<script src="js/table-example.js"></script>
+		<script src="jquery-validation/dist/jquery.validate.min.js"></script>
+		<script src="jquery-validation/dist/additional-methods.min.js"></script>
+    </body>
+</html>

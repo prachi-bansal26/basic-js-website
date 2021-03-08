@@ -1,0 +1,493 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    line-height: 1.5em;
+}
+nav {
+    padding: 1.2em;
+    background:#371665 url(../images/favicon-32x32.png) no-repeat 1% 40%;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    
+}
+nav a {
+    color: #cbbde2;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 0 0.5em;
+}
+nav a:first-child {
+    margin-left: 1.8em;
+}
+nav a:hover {
+    color: #FFF;
+}
+.pull-right {
+	float: right;
+	padding-right: 10em;
+}
+#dropdown {
+	position: relative;
+	cursor: pointer;
+}
+.dropdown-menu{
+ 	display: none;
+	position: absolute;
+	background: #fff;
+	border: 1px solid #ccc;
+	color: #525151;
+	border-radius: 0.2em;
+	right: 8em;
+	padding: 0;
+}
+.dropdown-menu li {
+	font-size: 14px;
+	padding: 0.4em 1.5em;
+	cursor: pointer;
+}
+.dropdown-menu li:hover {
+	background-color: #f8f9fa;
+}
+main {
+    padding: 5em 1em 1em 1em;
+}
+.left-col {
+    float: left;
+    width: 40%;
+    padding: 4.5em;
+}
+
+.font-60 {
+    font-size: 60px;
+}
+.purple {
+    color: #7952B3;
+}
+.intro-para {
+    line-height: 1.5em;
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #212529;
+}
+.styled-button {
+    text-align: center;
+    cursor: pointer;
+    line-height: 1.5;
+    padding: 1.2em 3.8em;
+    border: 1px solid #CCC;
+    background-color: transparent;
+    border-radius: 5px;
+    margin: 0.5em;
+    font-weight: bold;
+    font-size: 16px;
+}
+.styled-button a {
+	color: inherit;
+	text-decoration: none;
+}
+.btn-purple {
+	background-color: #7952b3;
+    color: #fff;
+    
+}
+.btn-purple:hover {
+    border: 1px solid #7952b3;
+    color: #7952b3;
+	background-color: #fff;
+}
+.btn-grey {
+	background-color: #6c757d;
+    color: #fff;
+}
+.btn-grey:hover {
+    background-color: #fff;
+    border: 1px solid #6c757d;
+    color: #6c757d;
+}
+.right-col {
+    width: 40%;
+    float: right;
+}
+.text-center {
+    text-align: center;
+}
+footer {
+    clear: both;
+    background-color: #F7F7F7;
+    padding: 2em;
+}
+.list-inline {
+    list-style: none;
+    padding: 0px !important;
+}
+.list-inline li {
+    display: inline;
+}
+.list-inline li a {
+    text-decoration: none;
+    color: #6c757d;
+    padding: 0 1em 0 0;
+    font-weight: bold;
+}
+footer p {
+    color: #6c757d;
+    font-size: 13px;
+}
+.bd-lead {
+	line-height: 1.5;
+	font-size: 20px;
+	font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+}
+
+/* UI Autocomplete */
+.ui-autocomplete {
+    max-height: 40%;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+  }
+  /* IE 6 doesn't support max-height
+   * we use height instead, but this forces the menu to always be this tall
+   */
+  * html .ui-autocomplete {
+    height: 40%;
+  }
+
+
+/* DOCUMENTATION PAGE */
+.left-nav {
+    width: 22%;
+    float: left;
+    color: #77757a;
+    position: fixed;
+    height: calc(100vh - 6.5rem);
+    left: 0;
+    overflow-y: scroll; 
+}
+.left-nav input {
+    padding: 1em;
+    border-radius: 0.5em;
+    margin-left: 1em;
+}
+.main-content {
+    width:45%;
+    float: left;
+    margin-left: 22em;
+}
+.show-code {
+    background-color: #F8F9FA;
+    padding: 1em;
+    overflow-x:scroll;
+    white-space:nowrap;
+}
+.right-nav {
+    width: 22%;
+    float: right;
+    color: #77757a;
+    border-left: 1px solid #CCC;
+    position: fixed;
+    right: 0;
+}
+.my-unstyled-list {
+    list-style-type: none;
+    line-height: 1.5em;
+}
+.my-unstyled-list a {
+    text-decoration: none;
+    color: #77757a;
+    cursor: pointer;
+}
+.my-unstyled-list a:hover {
+    color: #1E8BFF;
+}
+.footer_doc {
+    margin-left: 22em;
+}
+
+.ui-state-active {
+	background: #d2d0d0;
+	border: 1px solid #ddd;
+	color: #454545;
+}
+.ui-accordion .ui-accordion-content {
+	padding: 0;
+}
+/* Table */
+table {
+    width: 100%;
+    border: 1px solid #CCC;
+    border-radius: 0.25em;
+    padding: 1em;
+    background-color: #FFF;
+    border-spacing: 0px !important;
+}
+table thead {
+    text-align: left;
+    background-color: #414950;
+    color: #FFF;
+}
+thead tr th {
+    padding: 1em;
+    vertical-align: bottom !important;
+}
+tbody tr td {
+    padding: 0.5em;
+}
+tbody tr:nth-of-type(even) {
+    background-color: #CCC;
+}
+tbody tr:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+/* Small Desktop Media Query */
+@media only screen and (max-width: 1024px) {
+    .main-content {
+        margin-left: 23%;
+    }
+	.footer_doc {
+		margin-left: 23%;
+	}
+}
+/* Mobile Media Query */
+@media only screen and (max-width: 768px) {
+    nav {
+        padding: 3em 0.5em 0.5em 0.5em;
+        background:#563D7C url(../images/favicon-32x32.png) no-repeat 50% 20%;
+        text-align: center;
+    }
+    nav a:first-child {
+        margin-left: 0;
+    }
+    .left-col {
+        width: auto;
+        text-align: center;
+    }
+    .left-col::before {
+        content: url(../images/main-small.jpg);
+    }
+    .right-col {
+        display: none;
+    }
+    main {
+        padding-top: 7em;
+    }
+    .left-nav {
+        width: 100%;
+        position: relative;
+        overflow-y: auto;
+        height: auto;
+    }
+    .left-nav input {
+        width: 85%;
+    }
+    .left-nav ul{
+        display: none;
+    }
+    .left-nav::after {
+        content: url(../images/menu1.png);
+    }
+    .main-content {
+        width: 100%;
+        margin: 0;
+    }
+    .right-nav {
+        display: none;
+    }
+	.footer_doc {
+		margin-left: 0;
+	}
+    table {
+        padding: 0;
+    }
+    table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+    thead tr { 
+		display: none;
+	}
+    td { 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50% !important; 
+	}
+    td:before { 
+		position: absolute;
+		top: 1em;
+		left: 1em;
+		width: 45%; 
+		white-space: nowrap;
+	}
+	td:nth-of-type(1):before { 
+        content: "#"; 
+        font-weight: bold;
+    }
+	td:nth-of-type(2):before { 
+        content: "Title"; 
+        font-weight: bold;
+    }
+	td:nth-of-type(3):before { 
+        content: "Acceptance";
+        font-weight: bold;
+    }
+	td:nth-of-type(4):before {
+        content: "Difficulty";
+        font-weight: bold;
+    }
+}
+
+#signup {
+	width: 406px;
+    max-width: 406px;
+    margin: 0 auto;
+    padding: 0px 25px 25px;
+    background: #fff;
+    box-shadow:  0px 0px 0px 5px rgba( 255,255,255,0.4 ), 0px 4px 20px rgba( 0,0,0,0.33 );
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    display: table;
+    position: static;
+}
+
+#signup .header {
+    margin-bottom: 20px;
+}
+
+#signup .header h3 {
+    color: #333333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#signup .inputs {
+    margin-top: 25px;
+}
+
+#signup .inputs label {
+    color: #8f8f8f;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+    display: block;
+}
+
+input::-webkit-input-placeholder {
+    color:    #b5b5b5;
+}
+
+input:-moz-placeholder {
+    color:    #b5b5b5;
+}
+
+#signup .inputs input[type=email], input[type=password] {
+    background: #f5f5f5;
+    font-size: 0.8rem;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    padding: 13px 10px;
+    width: 95%;
+    margin-bottom: 20px;
+    box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
+    clear: both;
+}
+
+#signup .inputs input[type=email]:focus, input[type=password]:focus {
+    background: #fff;
+    box-shadow: 0px 0px 0px 3px #a386d2, inset 0px 2px 3px rgba( 0,0,0,0.2 ), 0px 5px 5px rgba( 0,0,0,0.15 );
+    outline: none;   
+}
+
+#signup .inputs .checkboxy {
+    display: block;
+    position: static;
+    height: 25px;
+    margin-top: 10px;
+    clear: both;
+}
+
+#signup .inputs input[type=checkbox] {
+    float: left;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+#signup .inputs label.terms {
+    float: left;
+    font-size: 14px;
+    font-style: italic;
+}
+
+#signup .inputs #submit {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px 0;
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    background: -moz-linear-gradient(top, #b9c5dd 0%, #a4b0cb);
+    background: -webkit-gradient(linear, left top, left bottom, from(#b9c5dd), to(#a4b0cb));
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #737b8d;
+    -moz-box-shadow: 0px 5px 5px rgba(000,000,000,0.1), inset 0px 1px 0px rgba(255,255,255,0.5);
+    -webkit-box-shadow:0px 5px 5px rgba(000,000,000,0.1), inset 0px 1px 0px rgba(255,255,255,0.5);
+    box-shadow: 0px 5px 5px rgba(000,000,000,0.1), inset 0px 1px 0px rgba(255,255,255,0.5);
+    text-shadow: 0px 1px 3px rgba(000,000,000,0.3), 0px 0px 0px rgba(255,255,255,0);
+    display: table;
+    position: static;
+    clear: both;
+}
+
+#signup .inputs #submit:hover {
+    background: -moz-linear-gradient(top, #a4b0cb 0%, #b9c5dd);
+    background: -webkit-gradient(linear, left top, left bottom, from(#a4b0cb), to(#b9c5dd));
+}
+
+/* slider css */
+* {
+	box-sizing: border-box;
+}
+.sliderSlides {
+	display: none;
+}
+img {
+	vertical-align: middle;
+	width: 100%;
+}
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.error {
+	color: red !important;
+}

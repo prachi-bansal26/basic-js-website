@@ -1,0 +1,116 @@
+<div class="main-content">	
+	<h1>Introduction</h1>
+                <p>Get started with Bootstrap, the world's most popular framework for building responsive, mobile-first sites, with BootstrapCDN and a template starter page.</p>
+                
+                <h2 id="quick-start">Quick start</h2>
+                <p>Looking to quickly add Bootstrap to your project? Use BootstrapCDN, provided for free by the folks at StackPath. Using a package manager or need to download the source files? Head to the downloads page.</p>
+                
+                <h2 id="css">CSS</h2>
+                <p>Copy-paste the stylesheet <code>&lt;link&gt;</code> into your <code>&lt;head&gt;</code> before all other stylesheets to load our CSS.</p>
+                <div class="show-code">
+                    <code>
+                    &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"&gt;
+                    </code>
+                </div>
+                
+                <h2 id="js">JS</h2>
+                <p>Many of our components require the use of JavaScript to function. Specifically, they require jQuery, Popper.js, and our own JavaScript plugins. Place the following <code>&lt;script&gt;</code>s near the end of your pages, right before the closing <code>&lt;/body&gt;</code> tag, to enable them. jQuery must come first, then Popper.js, and then our JavaScript plugins.</p>
+
+                <p>We use jQuery's slim build, but the full version is also supported.</p>
+                <div class="show-code">
+                    <code>
+                    &lt;script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"&gt;&lt;/script&gt;
+                    <br/>
+                    &lt;script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"&gt;&lt;/script&gt;
+                    <br/>
+                    &lt;script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"&gt;&lt;/script&gt;</code>
+                </div>
+                <p>Curious which components explicitly require jQuery, our JS, and Popper.js? Click the show components link below. If you're at all unsure about the general page structure, keep reading for an example page template.</p>
+                
+                <h2 id="starter-template">Starter template</h2>
+                <p>Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Put it all together and your pages should look like this:</p>
+                <div class="show-code">
+                    <pre>
+                    <code >
+&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+    &lt;!-- Required meta tags --&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+    &lt;!-- Bootstrap CSS --&gt;
+        &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"&gt;
+        &lt;title&gt;Hello, world!&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt; Hello, world!&lt;/h1&gt;
+            &lt;!-- Optional JavaScript --&gt;
+            &lt;!-- jQuery first, then Popper.js, then Bootstrap JS --&gt;
+             &lt;script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"&gt;&lt;/script&gt;
+            &lt;script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"&gt;&lt;/script&gt;
+            &lt;script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"&gt;&lt;/script&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+                    </code></pre>
+                </div>
+                
+                <h2 id="important-globals">Important globals</h2>
+                <p>Bootstrap employs a handful of important global styles and settings that you’ll need to be aware of when using it, all of which are almost exclusively geared towards the normalization of cross browser styles. Let’s dive in.</p>
+                
+                <h2 id="html-doctype">HTML5 doctype</h2>
+                <p>Bootstrap requires the use of the HTML5 doctype. Without it, you’ll see some funky incomplete styling, but including it shouldn’t cause any considerable hiccups.</p>
+                <div class="show-code">
+                    <code>
+                        &lt;!doctype html&gt;
+                        <br/>
+                        &lt;html lang="en"&gt;
+                        <br/>
+                        ...
+                        <br/>
+                        &lt;/html&gt;
+                    </code>
+                </div>
+                
+                <h2 id="responsive-meta-tags">Responsive meta tag</h2>
+                <p>Bootstrap is developed mobile first, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming for all devices, add the responsive viewport meta tag to your &lt;head&gt;.</p>
+                <div class="show-code">
+                    <code>
+                       &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+                    </code>
+                </div>
+                
+                <h2 id="box-sizing">Box-sizing</h2>
+                <p>For more straightforward sizing in CSS, we switch the global box-sizing value from content-box to border-box. This ensures padding does not affect the final computed width of an element, but it can cause problems with some third party software like Google Maps and Google Custom Search Engine.</p>
+                <p>On the rare occasion you need to override it, use something like the following:</p>
+                <div class="show-code">
+                    <code>
+                       .selector-for-some-widget {
+                          box-sizing: content-box;
+                        }
+                    </code>
+                </div>
+                <p>With the above snippet, nested elements—including generated content via ::before and ::after—will all inherit the specified box-sizing for that .selector-for-some-widget.</p>
+                <p>Learn more about <a href="https://css-tricks.com/box-sizing/">box model and sizing at CSS Tricks.</a></p>
+                
+                <h2 id="reboot">Reboot</h2>
+                <p>For improved cross-browser rendering, we use Reboot to correct inconsistencies across browsers and devices while providing slightly more opinionated resets to common HTML elements.</p>
+</div>
+<div class="right-nav">
+                <ul class="my-unstyled-list">
+                    <li><a href="#quick-start">Quick Start</a>
+                        <ul class="my-unstyled-list">
+                            <li><a href="#css">CSS</a></li>
+                            <li><a href="#js">JS</a></li>
+                        </ul>
+					</li>
+                    <li><a href="#starter-template">Starter Template</a></li>
+                    <li><a href="#important-globals">Important Globals</a>
+                        <ul class="my-unstyled-list">
+                            <li><a href="#html-doctype">HTML5 doctype</a></li>
+                            <li><a href="#responsive-meta-tags">Responsive Meta Tag</a></li>
+                            <li><a href="#box-sizing">Box-sizing</a></li>
+                            <li><a href="#reboot">Reboot</a></li>
+                        </ul>
+					</li>
+                </ul>
+            </div>

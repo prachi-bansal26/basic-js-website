@@ -1,0 +1,154 @@
+{ 
+"data": [
+	[1, 
+	"Two Sum",
+	"45.2%",
+	"Easy"
+	],
+    [2, 
+	"Add Two Numbers",
+	"33.0%",
+	"Medium"
+	],
+	[3, 
+	"Longest Substring Without Repeating Characters",
+	"29.7%",
+	"Medium"
+	],
+	[4, 
+	"Median of Two Sorted Arrays",
+	"28.6%",
+	"Hard"
+	],
+	[5, 
+	"Longest Palindromic Substring",
+	"28.9%",
+	"Medium"
+	],
+	[6, 
+	"ZigZag Conversion",
+	"35.1%",
+	"Medium"
+	],
+	[7, 
+	"Reverse Integer",
+	"25.6%",
+	"Easy"
+	],
+	[8, 
+	"String to Integer (atoi)",
+	"15.1%",
+	"Medium"
+	],
+	[9, 
+	"Palindrome Number",
+	"47.0%",
+	"Easy"
+	],
+	[10, 
+	"Regular Expression Matching",
+	"26.3%",
+	"Hard"
+	],
+	[11, 
+	"Container With Most Water",
+	"49.3%",
+	"Medium"
+	],
+	[12, 
+	"Integer to Roman",
+	"53.9%",
+	"Medium"
+	],
+	[13, 
+	"Roman to Integer",
+	"54.8%",
+	"Easy"
+	],
+	[14, 
+	"Longest Common Prefix",
+	"34.8%",
+	"Easy"
+	],
+	[15, 
+	"3Sum ",
+	"25.9%",
+	"Medium"
+	],
+	[16, 
+	"3Sum Closest",
+	"34.8%",
+	"Medium"
+	],
+	[17, 
+	"Merge Two Sorted Lists",
+	"51.7%",
+	"Easy"
+	],
+	[18, 
+	"Letter Combinations of a Phone Number",
+	"45.2%",
+	"Medium"
+	],
+	[19, 
+	"4Sum",
+	"32.7%",
+	"Medium"
+	],
+	[20, 
+	"Remove Nth Node From End of List",
+	"34.8%",
+	"Medium"
+	],
+	[21, 
+	"Valid Parentheses",
+	"38.2%",
+	"Easy"
+	],
+	[22, 
+	"Generate Parentheses",
+	"60.4%",
+	"Medium"
+	],
+	[23, 
+	"Merge k Sorted Lists",
+	"38.6%",
+	"Hard"
+	],
+	[24, 
+	"Swap Nodes in Pairs",
+	"48.7%",
+	"Medium"
+	],
+	[25, 
+	"Reverse Nodes in k-Group",
+	"40.0%",
+	"Hard"
+	],
+	[26, 
+	"Remove Duplicates from Sorted Array",
+	"43.7%",
+	"Easy"
+	],
+	[27, 
+	"Remove Element",
+	"47.2%",
+	"Easy"
+	],
+	[28, 
+	"Implement strStr()",
+	"33.9%",
+	"Easy"
+	],
+	[29, 
+	"Divide Two Integers",
+	"16.2%",
+	"Medium"
+	],
+	[30, 
+	"Substring with Concatenation of All Words",
+	"24.9%",
+	"Hard"
+	]
+	]
+} 
